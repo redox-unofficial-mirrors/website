@@ -21,10 +21,10 @@ If you want a smaller/simpler list of important programs, see [this](https://doc
 | CPU | - Intel 64-bit (x86_64) <br>- Intel 32-bit (i586) from Pentium II and after with limitations <br>- AMD 32/64-bit <br>- ARM 64-bit (aarch64) with limitations <br>- RISC-V 64-bit (riscv64gc) with limitations |
 | Hardware Interfaces | - ACPI, PCI, USB |
 | Storage | - IDE (PATA), SATA (AHCI), NVMe |
-| Video | - BIOS VESA, UEFI GOP, Intel GPU (only mode setting) |
+| Video | - BIOS VESA / UEFI GOP (lacking V-Sync, hotplugging, fixed resolution, and others), Intel GPU (WIP driver for some generations, display hotplugging is currently only working on Tiger Lake generation) |
 | Sound | - Intel and Realtek chipsets |
 | Input | - PS/2 keyboards, mouse, and touchpad <br> - USB keyboards, mouse and touchpad |
-| Ethernet | - Intel Gigabit and 10 Gigabit ethernet <br>- Realtek ethernet |
+| Ethernet | - Intel Gigabit and 10 Gigabit ethernet <br>- Realtek RTL8139 and RTL8168 ethernet |
 
 ## What are the Redox CPU requirements?
 
