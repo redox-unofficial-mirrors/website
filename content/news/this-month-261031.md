@@ -27,10 +27,6 @@ Wildan Mubarok fixed the missing codecs in GStreamer for video playback and fixe
 
 <img src="/img/screenshot/webkitgtk3-correct-layout.jpg" class="img-responsive" alt=""/>
 
-## More JIT Support!
-
-Wildan Mubarok implemented page fault handling, which fixed LLVM JIT and others.
-
 ## Kernel Improvements
 
 - (kernel) 
