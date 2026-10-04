@@ -15,31 +15,33 @@ If you would like to support Redox, please consider donating or buying some merc
 - [Patreon](https://www.patreon.com/redox_os)
 - [Merch](https://redox-os.creator-spring.com/)
 
-## WebKitGTK3 Video Support and Correct HTML Layout Rendering
-
-Wildan Mubarok fixed the missing codecs in GStreamer for video playback and fixed broken HTML layout.
-
-- YouTube
-
-<img src="/img/screenshot/file-name.type" class="img-responsive" alt=""/>
-
-- Correct HTML layout
-
-<img src="/img/screenshot/webkitgtk3-correct-layout.jpg" class="img-responsive" alt=""/>
-
 ## External Display Hot-plugging Support on Intel Tiger Lake GPUs
 
 Jeremy Soller and bjorn3 implemented the support for external display hot-plugging on Intel GPU driver for Tiger Lake generation, now external displays can be used without a system reboot.
 
-## Redox on Google Cloud!
-
-Aadarash (aka EuclidDivisionLemma) configured Google Cloud (GCP) to make Redox boot successfully.
-
-<img src="/img/screenshot/gcp.png" class="img-responsive" alt=""/>
+bjorn3 also used display mirroring as the default external display handling behavior.
 
 ## More JIT Support!
 
 Wildan Mubarok implemented page fault handling, which fixed LLVM JIT and others.
+
+Currently only implemented for x86.
+
+## Initial `rlimit` Implementation
+
+Landon Propes implemented the `getrlimit` and `setrlimit` functions to allow programs to use system resource limits.
+
+## Redox on Google Cloud!
+
+Aadarsh (aka EuclidDivisionLemma) configured Google Cloud (GCP) to make Redox boot successfully.
+
+<img src="/img/screenshot/gcp.png" class="img-responsive" alt=""/>
+
+## WebKitGTK3 Correct HTML Layout Rendering
+
+Wildan Mubarok fixed broken HTML layout, he also added a shortcut for the browser demo in Orbital launcher bar.
+
+<img src="/img/screenshot/webkitgtk3-correct-layout.jpg" class="img-responsive" alt=""/>
 
 ## Clang Support in Redox Build System
 
@@ -47,10 +49,11 @@ Wildan Mubarok implemented the support for Clang cross-compilation, which allow 
 
 ## Kernel Improvements
 
-- (kernel) 
+- (kernel) Val Lorentz fixed some Clippy warnings
 
 ## Driver Improvements
 
+- (driver) bjorn3 implemented the support for Linux DRM events
 - (driver) bjorn3 fixed multi-display support in VirtIO-GPU driver
 
 ## System Improvements
@@ -61,6 +64,8 @@ Wildan Mubarok implemented the support for Clang cross-compilation, which allow 
 
 ## Relibc Improvements
 
+- (libc) Wildan Mubarok implemented the `getentropy` and `gethostbyname2` functions
+- (libc) Rostyslav Toch implemented the `posix_madvise` function for Linux
 - (libc) auronandace applied more Clippy lints
 - (libc) auronandace reduced more `as` casting usage to prevent problems in code refactorings
 
@@ -78,7 +83,8 @@ Wildan Mubarok implemented the support for Clang cross-compilation, which allow 
 
 ## Packaging Improvements
 
-- (pkg) Wildan Mubarok implemented description in packages, initally to differentiate meta-packages from common packages
+- (pkg) bjorn3 removed most `/home/user` path usage in package data configuration in preparation for factory reset support and better package integrity
+- (pkg) Wildan Mubarok implemented description in packages, initially to differentiate meta-packages from common packages
 
 ## Programs
 
