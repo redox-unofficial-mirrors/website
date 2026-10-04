@@ -1,7 +1,7 @@
 +++
 title = "This Month in Redox - October 2026"
 author = "Ribbon and Ron Williams"
-date = "yyyy-mm-dd"
+date = "2026-10-31"
 +++
 
 Redox OS is a complete Unix-like general-purpose microkernel-based operating system
@@ -15,17 +15,11 @@ If you would like to support Redox, please consider donating or buying some merc
 - [Patreon](https://www.patreon.com/redox_os)
 - [Merch](https://redox-os.creator-spring.com/)
 
-## WebKitGTK3 Video Support and Correct HTML Layout Rendering
+## WebKitGTK3 Video Support
 
-Wildan Mubarok fixed the missing codecs in GStreamer for video playback and fixed broken HTML layout.
-
-- YouTube
+Wildan Mubarok fixed the missing codecs in GStreamer for video playback.
 
 <img src="/img/screenshot/file-name.type" class="img-responsive" alt=""/>
-
-- Correct HTML layout
-
-<img src="/img/screenshot/webkitgtk3-correct-layout.jpg" class="img-responsive" alt=""/>
 
 ## Kernel Improvements
 
