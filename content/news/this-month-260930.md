@@ -15,6 +15,40 @@ If you would like to support Redox, please consider donating or buying some merc
 - [Patreon](https://www.patreon.com/redox_os)
 - [Merch](https://redox-os.creator-spring.com/)
 
+## Redox at RustConf
+
+RustConf was in Montreal this year, September 8-11.
+I gave a quick update on Redox's recent progress.
+I didn't have time to read through the slides, and the slide navigator was slow to respond,
+so the presentation was quite rushed.
+As you watch the video, please pause to read the slides more thoroughly.
+You can watch on [the Rust Foundation's YouTube channel](https://www.youtube.com/@rustfoundation/videos) or here:
+
+[Lightning Talk "Redox OS Update" | RustConf 2026](https://www.youtube.com/watch?v=OJk75nPnZng)
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/OJk75nPnZng?si=jHXS6m-DDALNMdV7" title="Lightning Talk "Redox OS Update" | RustConf 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+There were lots of other great topics, so browse the full list of videos.
+A couple of highlights: Rust for GPU was a key topic this year, with 4 presentations, and there was an interesting presentation on [important considerations
+when using Unsafe Rust](https://www.youtube.com/watch?v=bTAEymCp7Ts).
+
+And a special thanks to Ernest Kissiedu for introducing me to many potential Redox partners and funders.
+Ernest is a free agent right now, so if you are looking for a gregarious galvanizer who knows
+everyone in the Rust community, you can [find him on LinkedIn](https://www.linkedin.com/in/ernest-kissiedu-a3a772252/).
+
+As I mentioned in my presentation, we are particularly looking for donors for our Redox Summer of Code program.
+Please donate at the links above to help support our students!
+
+And if you have any contact info for corporate sponsors,
+please email me at president@redox-os.org.
+
+RustConf next year is September 7-10, 2027, in Vancouver, Canada, the most beautiful city in the world,
+if you like mountains, water, tree-filled parks and seaside walks.
+(Note that Vancouver Island and Vancouver, Oregon are completely different places.)
+I plan to be there, and I hope to see you there.
+
+- Ron Williams
+
 ## External Display Hot-plugging Support on Intel Tiger Lake GPUs
 
 Jeremy Soller and bjorn3 implemented the support for external display hot-plugging on Intel GPU driver for Tiger Lake generation, now external displays can be used without a system reboot.
