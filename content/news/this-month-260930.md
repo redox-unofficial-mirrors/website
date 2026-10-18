@@ -61,6 +61,10 @@ Wildan Mubarok implemented page fault handling, which fixed LLVM JIT and others.
 
 Currently only implemented for x86.
 
+## uutils 0.11.0 Upgrade
+
+Wildan Mubarok updated `uutils` from version 0.6.0/0.7.0 to 0.11.0 !!, which should fix many bugs.
+
 ## Initial `rlimit` Implementation
 
 Landon Propes implemented the `getrlimit` and `setrlimit` functions to allow programs to use system resource limits.
@@ -83,12 +87,14 @@ Wildan Mubarok implemented the support for Clang cross-compilation, which allow 
 
 ## Kernel Improvements
 
+- (kernel) Aadarsh simplified NUMA code
 - (kernel) Val Lorentz fixed some Clippy warnings
 
 ## Driver Improvements
 
 - (driver) bjorn3 implemented the support for Linux DRM events
 - (driver) bjorn3 fixed multi-display support in VirtIO-GPU driver
+- (driver) bjorn3 implemented a macro to simplify Intel GPU driver register access code
 
 ## System Improvements
 
@@ -98,7 +104,11 @@ Wildan Mubarok implemented the support for Clang cross-compilation, which allow 
 
 ## Relibc Improvements
 
-- (libc) Wildan Mubarok implemented the `getentropy` and `gethostbyname2` functions
+- (libc) Wildan Mubarok implemented the `getentropy` and `gethostbyname2` (currently only support `AF_INET`) functions
+- (libc) Wildan Mubarok fixed ARM64 weak symbol loading and TLS relocation
+- (libc) Wildan Mubarok fixed `dlclose` function underflow in ARM64
+- (libc) Wildan Mubarok fixed i586 TLS relocation
+- (libc) Wildan Mubarok fixed a dynamic linker bug where some applications in `PATH` environment variable were being treated as executables in current directory
 - (libc) Rostyslav Toch implemented the `posix_madvise` function for Linux
 - (libc) auronandace applied more Clippy lints
 - (libc) auronandace reduced more `as` casting usage to prevent problems in code refactorings
@@ -122,11 +132,15 @@ Wildan Mubarok implemented the support for Clang cross-compilation, which allow 
 
 ## Programs
 
+- (app) Wildan Mubarok enabled i586 dynamic linking for basic applications
+- (app) Wildan Mubarok enabled cross-compilation in Lua 5.3 compatibility layer
 - (app) Wildan Mubarok fixed a crash in keyboard capture handling in GTK's Orbital backend
+- (app) Stephen Seo fixed the puzzle obfuscation logic of Redox's Redoku game
 
 ## Build System Improvements
 
-- (build) 
+- (build) Wildan Mubarok fixed the `binary` recipe rule unnecessarily building host dependencies from `source` rule
+- (build) Mohammed Naser improved Cookbook error report to clearly show the failure reason when a ignored recipe build dependency is used
 
 ## Documentation Improvements
 
